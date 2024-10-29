@@ -35,6 +35,7 @@ class _loginPageState extends State<LoginPage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            // Image(image: image)
             Stack(
               children: <Widget>[
                 Container(
@@ -43,9 +44,7 @@ class _loginPageState extends State<LoginPage> {
                   margin: EdgeInsets.symmetric(vertical: 85, horizontal: 20),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Theme
-                          .of(context)
-                          .primaryColor,
+                      color: Colors.blueGrey,
                       boxShadow: [
                         BoxShadow(
                             color: Theme
@@ -59,9 +58,9 @@ class _loginPageState extends State<LoginPage> {
                       key: globalKey,
                       child: Column(
                         children: <Widget>[
-                          SizedBox(
-                            height: 25,
-                          ),
+                          Image.asset("assets/images/loginLogo.png", width: 300, height: 300,),
+                          SizedBox(height: 100,),
+
                           Text(
                             "Login",
                             style: Theme
@@ -85,7 +84,7 @@ class _loginPageState extends State<LoginPage> {
                                     borderSide: BorderSide(
                                         color: Theme
                                             .of(context)
-                                            .cardColor)),
+                                            .canvasColor)),
                                 prefixIcon: Icon(
                                   Icons.email,
                                   color: Theme
